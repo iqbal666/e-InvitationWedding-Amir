@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Vendor -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/main.js"></script>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Kad Kahwin Bamer</title>
+
+
+</head>
+
+<body>
+
+    
+    
+
+
+    <div class="card">
+
+        <!-- music -->
+        <audio id="bg-music" autoplay>
+            <source src="../Kad-Khawin-Amir/img/cuco.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div class="music-card">
+            <button id="play-btn">▶</button>
+            <button id="pause-btn">⏸</button>
+            <button id="stop-btn">⏹</button>
+        </div>
+
+        <div class="petal-container"></div>
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="content">
+                <p class="title fade-top-2">The Wedding Of</p>
+                <h2 class="fade-top-3">Eman & Amir</h2>
+
+            </div>
+
+            <div class="content-2">
+
+                <div class="tarikh">
+                    <div>
+                        <div class="time" id="days">--</div>
+                        <div class="label">Days</div>
+                    </div>
+                    <div>
+                        <div class="time" id="hours">--</div>
+                        <div class="label">Hours</div>
+                    </div>
+                    <div>
+                        <div class="time" id="minutes">--</div>
+                        <div class="label">Minutes</div>
+                    </div>
+                    <div>
+                        <div class="time" id="seconds">--</div>
+                        <div class="label">Seconds</div>
+                    </div>
+                </div>
+                
+                <h3>Sunday </h3>
+                <h4>25.05.25</h4>
+
+                <!-- <button class="button-date"><i class="fa-regular fa-calendar-check"></i>Save the date</button> -->
+
+                <a class="button-date" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Eman+%26+Amir+Wedding&dates=20250525T100000/20250525T140000&details=Join+us+to+celebrate+the+wedding+of+Eman+%26+Amir!&location=Laila+Restaurant&sf=true&output=xml" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-calendar-check"></i> Save the date
+                </a>
+                
+            </div>
+
+            
+        
+            <script>
+                function countdownToDate() {
+                    const now = new Date().getTime(); // Current time
+                    const malaysiaTime = new Date().toLocaleString("en-US", { timeZone: "Asia/Kuala_Lumpur" });
+                    const nowMYT = new Date(malaysiaTime).getTime(); // Convert Malaysia time to milliseconds
+        
+                    const eventDate = new Date("2025-05-25T00:00:00+08:00").getTime(); // Target date in Malaysia time
+                    const timeDifference = eventDate - nowMYT;
+        
+                    if (timeDifference > 0) {
+                        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+                        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        
+                        document.getElementById("days").innerText = days;
+                        document.getElementById("hours").innerText = hours;
+                        document.getElementById("minutes").innerText = minutes;
+                        document.getElementById("seconds").innerText = seconds;
+                    } else {
+                        document.querySelector(".countdown-box").innerHTML = "<h2>The event has started! 🎉</h2>";
+                    }
+                }
+        
+                // Run function immediately and update every second
+                countdownToDate();
+                setInterval(countdownToDate, 1000);
+            </script>
+
+        </section>
+
+
+        <!-- Walimatul Urus Section -->
+        <section class="walimatul">
+            <div class="content hidden">
+                <h1 class="arab">السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h1>
+                <h2 class="arab">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h2>
+
+
+                <div class="info-1">
+                    <h1>Walimatul Urus</h1>
+
+                    <p>
+                        With heartfelt gratitude to the Divine Presence, 
+                        I am delight and joyful to invite Mr. / Mrs. / Mr. / Ms. 
+                        to the solemnization wedding ceremony of
+
+                    </p>
+                    
+                    <h2 class="nama">
+                        Eman Salaehreh <br> 
+                        & <br> 
+                        Muhammad Amiruddin Bin Ariffin
+                    </h2>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <!-- Location Section -->
+        <section class="location">
+
+            <div class="content hidden">
+                <h1>Location</h1>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7927.712741347855!2d101.27364531215555!3d6.539815577780753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b377cbb3308925%3A0x89584debf0eed350!2sLaila%20Restaurant!5e0!3m2!1sen!2smy!4v1739088736462!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- <h2>Laila Restaurant,Yala</h2> kalau nak tindih kt google map letak nama laila restaurant -->
+                </div>
+
+
+                <h2>Contact</h2>
+                <p>
+                    <br>Moksu/Mokjik - 0935868208</br>
+                    <br>Eman - 0862983493</br>
+                    <br>Amir - 01128934756</br>
+                </p>
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+        <!-- Event Schedule Section -->
+        <section class="event-information">
+            <div class="content hidden">
+                <h1>Event Schedule</h1>
+                <h2>กำหนดการงาน</h2>
+
+
+                <div class="info-2">
+                    <h3>10:00 AM</h3>
+                    <p>Akad Nikah 
+                        <br>พิธีนิกะห์
+                    </p>
+
+                    <h3>11:30 AM</h3>
+                    <p>Lunch 
+                        <br>ร่วมรับประทานอาหาร
+                    </p>
+
+                    <h3>2:00 PM</h3>
+                    <p>End of event 
+                        <br>งานสิ้นสุด
+                    </p>
+                </div>
+
+                <h4>Theme</h4>
+                    <div class="tema-kaler circle light-nude" style="background-color: #6C2E13;"></div>
+                    <div class="tema-kaler normal-nude" style="background-color: #A37967;"></div>
+                    <div class="tema-kaler circle dark-nude" style="background-color: #DCC0AD;"></div>
+                    <div class="tema-kaler circle nude" style="background-color: #96998E;"></div>
+                
+                    <h5>
+                        Your presence and wishes will definitely make this day a joyous and memorable one. 
+                        InshaAllah. Thank you.
+                    </h>
+                       
+
+                
+                   
+            </div>
+
+        </section>
+
+        <!-- Salam kaut Section -->
+        <section class="salam-kaut">
+            <div class="content hidden">
+                <h1>Salam Kaut</h1>
+                    <div class="bank-maybank">
+                        <img src="./img/qrcodethai.jpeg" alt="" class="img-bank1">
+                            <h2>Eman Salaehreh</h2>
+                            <h3>(Thai Bank)</h3>
+                    </div>
+
+
+                    <div class="bank-hsbc">
+                        <img src="./img/amircimb.png" alt="" class="img-bank2">
+                        <h2>Muhammad Amiruddin Bin Ariffin</h2>
+                        <h3>HSBC</h3>
+                    </div>
+
+            </div>
+            
+
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="attendance">
+            <div class="content">
+                <div class="tajuk">
+                    <h1>Wedding Attendance Form 💍</h1>
+                    <p>Please confirm your attendance by March 30, 2025</p>
+                </div>
+
+                <div class="form">
+
+                    <form id="wedding-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="phone">Phone No:</label>
+                        <input type="tel" id="phone" name="phone" pattern="\+?6?(?:01[0-46-9]\d{7,8}|0\d{8})" required>
+                    
+                        <label for="attendance">Will you attend?</label>
+                        <select id="attendance" name="attendance" required>
+                            <option value="yes">Yes, I will attend 🎉</option>
+                            <option value="no">Sorry, I can't make it 😢</option>
+                        </select>
+                    
+                        <label for="message">Greetings: </label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    
+                        <button type="submit">Submit</button>
+                    </form>
+                    
+                    <p id="response-message"></p>
+                    
+                   
+                </div>
+
+                
+                
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+    </div>
+
+
+
+    
+</body>
+
+</html>

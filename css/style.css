@@ -1,0 +1,662 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+/* General Global Setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+
+
+    position: relative;
+    /*background: linear-gradient(to right, #24243e, #302b63, #0f0c29);*/
+    background: #F8F4FF;
+    font-family: "Jost", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+/*============================================================================================
+    # animation
+============================================================================================*/
+.petal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.petal {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: url('../img/flower.png') no-repeat center/cover; /* Make sure you have a petal image */
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.music-card {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.music-card:hover {
+    transform: scale(1.1);
+}
+
+.music-card button {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.music-card button:hover {
+    background-color: #ddd;
+}
+
+
+
+
+/*============================================================================================
+    # Transition
+============================================================================================*/
+/* Scroll Reveal Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1.1s ease-in-out;
+}
+
+/* Triggered state */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*============================================================================================
+    # transition
+============================================================================================*/
+
+/*============================================================================================
+    # Card
+============================================================================================*/
+.card {
+    max-width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background: #F0EFEB;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Jost", sans-serif;
+    position: relative;
+    overflow: hidden;
+
+    background-image: url(../img/bg6.png);
+    
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/*============================================================================================
+    # Intro
+============================================================================================*/
+
+/* muka depan */
+.card section.muka-depan1 {
+    background: url(../img/mainbg2.png), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    z-index: 500;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    background-color: #F3F1EE;
+}
+
+.card section.muka-depan1 .border .container {
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+
+.card section.muka-depan1 .border .container p {
+    display: inline;
+    vertical-align: middle;
+    margin: 1.1%;
+  }
+  
+  .card section.muka-depan1 .border .container .big {
+    font-size: 30px;
+    color: #875C05;
+  }
+  
+  .card section.muka-depan1 .border .container .small {
+    font-size: 20px;
+    color: #875C05;
+  }
+
+.card section.muka-depan1 .border {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card section.muka-depan1 .border .img-mukadpn {
+    width: 100%;
+    height: 10%;
+    
+}
+
+.card section.muka-depan1 .border h2 {
+    padding-top: 10%;
+    color: #875C05;
+    font-size: 2.5rem;
+}
+
+.card section.muka-depan1 .border p {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 1.2rem;
+}
+
+.card section.muka-depan1 .border .button-open {
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid #f7f5f5f1;
+    border-radius: 14px ;
+    width: 100px;
+    height: 50px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 3px 2px rgba(124, 124, 124, 0.63);
+    background-color: #ffffff;
+}
+
+/* intro Section */
+.card section.intro {
+    /* background: url(../img/bg1.png), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  */
+    min-height: 100vh;
+    z-index: 500;
+    border-bottom: 1px solid rgb(195, 195, 195);
+}
+
+.card section.intro .content {
+    display: block;
+    padding: 18% 0%;
+    text-align: center;
+}
+
+.card section.intro .content p {
+    
+    margin-top: 2px;
+    margin-bottom: 2%;
+}
+
+.card section.intro .content h2 {
+    font-family: 'Gwendolyn', cursive;
+    margin-top: 10%;
+    font-size: 3rem;
+    color: #8E6728;
+}
+
+.card section.intro .content-2 {
+    display: block;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.card section.intro .content-2 .tarikh {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 20px;
+    /* Grey background */
+    border: 2px solid #dbdbdb62;
+    /* Black border */
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+            gap: 15px;
+}
+
+.card section.intro .content-2 h3 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card section.intro .content-2 h4 {
+    color: #7A6309;
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+.card section.intro .content-2 .button-date {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #f7f5f5f1;
+    font-size: 16px;
+    font-weight: medium;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px 2px rgba(124, 124, 124, 0.63);
+    transition: all 0.3s ease;
+}
+
+
+
+.card section.intro .content-2 .button-date i {
+    margin-right: 8px;
+    font-size: 18px;
+
+}
+/* intro Section */
+
+
+/* walimatul Section */
+.card section.walimatul {
+    /* background: url(../img/mainbg.jpg), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    min-height: 80vh;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    padding-top: 10%;
+}
+
+.card section.walimatul .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding: 20px;
+    background-color: #FFF7F7E5;
+    /* Grey background */
+    border: 2px solid #EFDB94;
+    /* Black border */
+    border-radius: 10px;
+    /* Rounded corners */
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);   
+}
+
+.card section.walimatul .content h1 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+
+
+
+.card section.walimatul .content h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.card section.walimatul .content .info-1 h1  {
+    font-size: 1.2rem;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.card section.walimatul .content .info-1 p {
+    font-size: 1.0rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 1.5rem;
+}
+
+.card section.walimatul .content .info-1 h2 {
+    line-height: 1.8rem;
+}
+
+.nama {
+    font-family: 'Gwendolyn', cursive;
+}
+/* walimatul Section */
+
+/* Location Section */
+.card section.location {
+    /* background: url(../img/mainbg.jpg), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    min-height: 100vh;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    padding-top: 10%;
+    
+}
+
+.card section.location .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding: 20px;
+    background-color: #F8F8F8;
+    /* Grey background */
+    border: 2px solid #dbdbdb62;
+    /* Black border */
+    border-radius: 10px;
+    /* Rounded corners */
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card section.location .content h1 {
+    padding-top: 5%;
+   
+}
+
+.card section.location .content .map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.card section.location .content .map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    padding-top: 5%;
+
+}
+/* Location Section */
+
+/* event-information Section */
+.card section.event-information {
+    /* background: url(../img/mainbg.jpg), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    min-height: 80vh;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    padding-top: 10%;
+}
+
+.card section.event-information .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding: 20px;
+    background-color: #FFF7F7E5;
+    /* Grey background */
+    border: 2px solid #EFDB94;
+    /* Black border */
+    border-radius: 10px;
+    /* Rounded corners */
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);   
+}
+
+.card section.event-information .content h1 {
+    font-size: 1.8rem;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.card section.event-information .content h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+}
+
+.card section.event-information .content .info-2 h3 {
+    font-size: 1.0rem;
+    padding-top: 5%;
+}
+
+.card section.event-information .content h4 {
+    font-size: 1.8rem;
+    padding-top: 10%;
+}
+
+.card section.event-information .content .tema-kaler {
+    width: 50px;   /* Circle size */
+    height: 50px;  
+    border-radius: 50%; /* Makes it round */
+    display: inline-block;
+    transform: scale(0.5);
+}
+
+.card section.event-information .content h5 {
+    font-size: 1.0rem;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 1.5rem;
+    font-weight: normal;
+}
+
+
+/* event-information Section */
+
+/* salam-kaut Section */ 
+
+.card section.salam-kaut {
+
+    /* background: url(../img/mainbg.jpg), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    min-height: 90vh;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    padding-top: 10%;
+
+}
+
+
+
+.card section.salam-kaut .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding: 20px;
+    background-color: #FFF7F7E5;
+    /* Grey background */
+    border: 2px solid #EFDB94;
+    /* Black border */
+    border-radius: 10px;
+    /* Rounded corners */
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.card section.salam-kaut .content h1 {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+
+.card section.salam-kaut .content .bank-maybank {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    /* Rounded corners */
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.card section.salam-kaut .content .bank-maybank .img-bank1 {
+    width: 60%;
+    height: 10%;
+}
+
+.card section.salam-kaut .content .bank-maybank h2 {
+  padding-top: 3%;
+  padding-bottom: 2%;
+  font-weight: normal;
+}
+
+.card section.salam-kaut .content .bank-maybank h3 {
+    font-weight: normal;
+  }
+
+  .card section.salam-kaut .content .bank-hsbc {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    /* Rounded corners */
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+
+.card section.salam-kaut .content .bank-hsbc .img-bank2 {
+    width: 40%;
+    height: 10%;
+}
+
+.card section.salam-kaut .content .bank-hsbc h2 {
+    padding-top: 3%;
+    padding-bottom: 2%;
+    font-weight: normal;
+  }
+
+  .card section.salam-kaut .content .bank-hsbc h3 {
+    font-weight: normal;
+  }
+
+
+/* attendance Section */ 
+
+.card section.attendance {
+    /* background: url(../img/mainbg.jpg), linear-gradient(to right, #F8F4FF, #f9fcff, #F8F4FF); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    min-height: 90vh;
+    border-bottom: 1px solid rgb(195, 195, 195);
+    padding-top: 10%;
+
+}
+
+
+
+
+.card section.attendance .content {
+
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card section.attendance .content .tajuk {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    
+}
+
+.card section.attendance .content .tajuk p {
+    padding-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.card section.attendance .content .form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-align: left;
+   
+}
+
+.card section.attendance .content .form input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   
+}
+
+.card section.attendance .content .form button {
+    width: 100%;
+    padding: 10px;
+    background: #1A9B38;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+   
+}
+
+.card section.attendance .content .form button:hover {
+    background: #126C27;
+ 
+   
+}
+
+
+/* attendance Section */ 
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css Vendor -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Kad Kahwin Bamer</title>
+
+
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="petal-container">
+            <script>
+                function createPetal() {
+                    const petal = document.createElement('div');
+                    petal.classList.add('petal');
+                    petal.style.left = `${Math.random() * 100}vw`;
+                    petal.style.animationDuration = `${Math.random() * 3 + 2}s`; // Between 2 and 5 seconds
+                    document.querySelector('.petal-container').appendChild(petal);
+            
+                    setTimeout(() => {
+                        petal.remove();
+                    }, 5000);
+                }
+            
+                setInterval(createPetal, 300);
+            </script>
+
+        </div>
+        <!-- Intro Section -->
+        <section class="muka-depan1">
+            <div class="border">
+                <div class="container">
+                    <p class="big">Save</p>
+                    <p class="small">the</p>
+                    <p class="big">Date</p>
+                </div>
+                <!-- <h1> Save the Date</h1> -->
+                <img src="./img/frontpage.png" alt="" class="img-mukadpn">
+                <h2>25.05.25</h2>
+                <p>You are invited</p>
+                <button class="button-open" onclick="window.location.href='mainpage.html'">OPEN</button>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    
+</body>
+
+</html>
