@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -135,6 +136,7 @@ body {
     background-attachment: fixed;
     width: 100%;
     
+    
 }
 
 section {
@@ -159,7 +161,7 @@ section {
 }
 
 .card section.muka-depan1 .border .container {
-    padding-top: 5%;
+    padding-top: 25%;
     padding-bottom: 10%;
 }
 
@@ -172,16 +174,16 @@ section {
   
   .card section.muka-depan1 .border .container .big {
     font-size: 30px;
-    color: #875C05;
+    color: #292929;
   }
   
   .card section.muka-depan1 .border .container .small {
-    font-size: 20px;
-    color: #875C05;
+    font-size: 16px;
+    color: #292929;
   }
 
 .card section.muka-depan1 .border {
-    margin-top: 10%;
+    margin-top: 0%;
     margin-left: auto;
     margin-right: auto;
     width: 350px;
@@ -197,7 +199,7 @@ section {
 
 .card section.muka-depan1 .border h2 {
     padding-top: 10%;
-    color: #875C05;
+    color: #D5A90C;
     font-size: 2.5rem;
 }
 
