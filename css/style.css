@@ -248,6 +248,7 @@ section {
 .card section.intro .content h2 {
     font-family: 'Gwendolyn', cursive;
     margin-top: 10%;
+    margin-bottom: 10%;
     font-size: 3rem;
     color: #8E6728;
 }
