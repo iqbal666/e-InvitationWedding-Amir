@@ -130,7 +130,7 @@ body {
     position: relative;
     overflow: hidden;
 
-    background-image: url(../img/Web-bg-726-2.png);
+    background-image: url(../img/Web-bg-3.png);
     
     /* background-position: center; */
     background-attachment: fixed;
@@ -242,13 +242,14 @@ section {
     
     margin-top: 2px;
     margin-bottom: 2%;
+    font-size: 1.2rem;
 }
 
 .card section.intro .content h2 {
     font-family: 'Gwendolyn', cursive;
     margin-top: 10%;
     margin-bottom: 10%;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #8E6728;
 }
 
