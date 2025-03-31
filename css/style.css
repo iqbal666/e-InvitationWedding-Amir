@@ -235,7 +235,6 @@ section {
 .card section.intro .content {
     display: block;
     padding-top: 30%;
-    /* padding: 18% 0%; */
     text-align: center;
 }
 
@@ -249,7 +248,7 @@ section {
     font-family: 'Gwendolyn', cursive;
     margin-top: 10%;
     margin-bottom: 10%;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #8E6728;
 }
 
