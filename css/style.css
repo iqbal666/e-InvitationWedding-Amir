@@ -234,7 +234,8 @@ section {
 
 .card section.intro .content {
     display: block;
-    padding: 18% 0%;
+    padding-top: 30%;
+    /* padding: 18% 0%; */
     text-align: center;
 }
 
