@@ -229,7 +229,7 @@ section {
     background-position: center;  */
     min-height: 100vh;
     z-index: 500;
-    border-bottom: 1px solid rgb(195, 195, 195);
+    /* border-bottom: 1px solid rgb(195, 195, 195); */
 }
 
 .card section.intro .content {
@@ -319,7 +319,7 @@ section {
     background-size: cover;
     background-position: center; */
     min-height: 80vh;
-    border-bottom: 1px solid rgb(195, 195, 195);
+    /* border-bottom: 1px solid rgb(195, 195, 195); */
     padding-top: 10%;
 }
 
@@ -385,7 +385,7 @@ section {
     background-size: cover;
     background-position: center; */
     min-height: 100vh;
-    border-bottom: 1px solid rgb(195, 195, 195);
+    /* border-bottom: 1px solid rgb(195, 195, 195); */
     padding-top: 10%;
     
 }
@@ -436,7 +436,7 @@ section {
     background-size: cover;
     background-position: center; */
     min-height: 80vh;
-    border-bottom: 1px solid rgb(195, 195, 195);
+    /* border-bottom: 1px solid rgb(195, 195, 195); */
     padding-top: 10%;
 }
 
@@ -507,7 +507,7 @@ section {
     background-size: cover;
     background-position: center; */
     min-height: 90vh;
-    border-bottom: 1px solid rgb(195, 195, 195);
+    /* border-bottom: 1px solid rgb(195, 195, 195); */
     padding-top: 10%;
 
 }
@@ -595,7 +595,7 @@ section {
     background-size: cover;
     background-position: center; */
     min-height: 90vh;
-    border-bottom: 1px solid rgb(195, 195, 195);
+    /* border-bottom: 1px solid rgb(195, 195, 195); */
     padding-top: 10%;
 
 }
